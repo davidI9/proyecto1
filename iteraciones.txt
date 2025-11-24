@@ -1,0 +1,10 @@
+1º 
+Este backend debe tener una clase tarea que almacene los campos: id, titulo, descripcion, fecha de finalizacion, duracion, importancia y estado.
+
+Los campos por defecto de la tarea son: titulo: tiene que estar rellena, descripcion: "UNKNOWN", fecha: tiene que estar rellena, duracion: 0, importancia: normal (1), terminado: false, id: random UUID
+
+La descripcion debe tener maximo 200 caracteres, el titulo maximo 50, la fecha debe de seguir el formato intrnacional ISO (AAAA-MM-DD), la duracion tiene limite maximo 999_999_999 minutos, siendo el tiempo en horas, dias etc que luego se vaya a representar, un atributo calculado a raiz de la cantidad de minutos que debe de ser almacenado en un entero, la importancia puede tomar cuatro valores: baja (0), normal (1), alta (2) y extrema (3); el atributo estado (status) es un valor de tipo booleano que se almacena en false cuando la tarea esta sin terminar y en true cuando la tarea esta terminada.
+
+La clase debe de poder cambiar cada uno de los campos a través de un método excepto evidentemente el id
+Cuando se instancia la clase, esta debe de crear el uuid automaticamente
+Si cualquiera de los campos obligatorios no estan introducidos (titulo y fecha de finalizacion), no se puede crear la instancia 
