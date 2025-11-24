@@ -1,5 +1,7 @@
-from ..domain.Task import Task
+from ..domain.entities.Task import Task
+from ..domain.value_objects.Title import Title
 from uuid import UUID
+import pytest
 
 def test_task_creation():
     
@@ -25,10 +27,8 @@ def test_task_has_id():
 
 def test_title_cap_is_50_letters():
     #arrange
+    title="abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
     #act
-    task = Task(title="abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz")
     #assert
-    
-    
-    
-    #TERMINAR EL TEST
+    with pytest.raises(ValueError):
+        title2 = Title(title)
