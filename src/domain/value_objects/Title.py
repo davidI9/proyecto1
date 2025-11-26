@@ -10,5 +10,4 @@ class Title:
     def __eq__(self, value):
         if self.title == value.title:
             return True
-        
         return False
