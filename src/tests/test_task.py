@@ -1,9 +1,9 @@
-from ..domain.entities.Task import Task
-from ..domain.value_objects.Title import Title
-from ..domain.value_objects.EndDate import EndDate
-from ..domain.value_objects.Description import Description
-from ..domain.value_objects.Duration import Duration
-from ..domain.value_objects.Relevance import Relevance
+from src.domain.entities.Task import Task
+from src.domain.value_objects.Title import Title
+from src.domain.value_objects.EndDate import EndDate
+from src.domain.value_objects.Description import Description
+from src.domain.value_objects.Duration import Duration
+from src.domain.value_objects.Relevance import Relevance
 from uuid import UUID
 import pytest
 
